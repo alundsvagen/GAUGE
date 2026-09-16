@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gauge | Om oss. Vi älskar vad marknadsbyråer gör. Vi gör bara det andra. High Quality, Fast som blixten, Affordable rörelsdesign för Meta-annonser.">
+<meta name="keywords" content="Meta-annonser, videoproduktion, annonser, reklam, Stockholm">
+<meta name="author" content="Alexandra Grisanti">
+<meta property="og:title" content="Om oss — Gauge">
+<meta property="og:description" content="Vi älskar vad ni gör. Vi gör bara det andra. Handgjord motion design för Meta-annonser.">
+<meta property="og:type" content="website">
+<title>Om oss — Gauge</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230F6E78'/><text x='50' y='70' font-size='70' font-weight='bold' text-anchor='middle' fill='%23fff' font-family='sans-serif'>G</text></svg>" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;--ink:#16232A;--ink-soft:#4E6169;--ink-faint:#8FA0A6;
+  --rule:#DFE4E2;--measure:#0F6E78;--measure-deep:#0A4F57;--hazard:#B8320D;--max:1200px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.026em;line-height:1.09;}
+h1{font-size:clamp(30px,4.4vw,54px);font-weight:800;letter-spacing:-.036em;}
+h2{font-size:clamp(24px,3vw,35px);}
+h3{font-size:18px;letter-spacing:-.012em;}
+p{margin:0;}
+a{color:inherit;}
+img{max-width:100%;}
+:focus-visible{outline:2px solid var(--measure);outline-offset:3px;}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.04em;color:var(--measure-deep);}
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;padding:13px 22px;
+  border:1.5px solid var(--ink);background:var(--ink);color:#fff;border-radius:2px;cursor:pointer;text-decoration:none;
+  font-family:inherit;transition:background .14s linear,border-color .14s linear,color .14s linear;}
+.btn:hover{background:var(--measure-deep);border-color:var(--measure-deep);}
+.btn-ghost{background:transparent;color:var(--ink);}
+.btn-ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+.rail{position:fixed;left:0;top:0;bottom:0;width:30px;z-index:5;border-right:1px solid var(--rule);pointer-events:none;}
+.rail::after{content:"";position:absolute;right:0;top:0;bottom:0;width:14px;
+  background:repeating-linear-gradient(to bottom,var(--rule) 0 1px,transparent 1px 22px);}
+@media (max-width:1180px){.rail{display:none;}}
+
+header{border-bottom:1px solid var(--rule);position:sticky;top:0;background:#fff;z-index:30;}
+.bar{display:flex;align-items:center;gap:20px;padding:13px 28px;max-width:var(--max);margin:0 auto;}
+.mark{display:flex;flex-direction:column;gap:3px;margin-right:auto;text-decoration:none;}
+.mark .name{font-weight:800;font-size:20px;letter-spacing:.17em;line-height:1;}
+.mark .ticks{height:6px;width:100px;opacity:.5;background:repeating-linear-gradient(to right,var(--ink) 0 1px,transparent 1px 8px);}
+.bar nav{display:flex;gap:20px;}
+.bar nav a{font-size:14.5px;font-weight:500;color:var(--ink-soft);text-decoration:none;}
+.bar nav a:hover{color:var(--measure-deep);text-decoration:underline;text-underline-offset:4px;}
+.bar nav a[aria-current]{color:var(--ink);font-weight:600;}
+@media (max-width:560px){.bar{padding:12px 18px;gap:12px;}.bar nav{gap:14px;}.bar nav a{font-size:13.5px;}.bar .btn{padding:10px 14px;font-size:13.5px;}}
+
+section{border-top:1px solid var(--rule);}
+.sec{padding-top:60px;padding-bottom:60px;}
+@media (max-width:520px){.wrap{padding:0 18px;}.sec{padding-top:42px;padding-bottom:42px;}}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;}
+.sec-sub{margin-top:14px;color:var(--ink-soft);max-width:64ch;}
+
+/* hero */
+.hero{padding:62px 0 60px;}
+.hero h1{max-width:18ch;}
+.hero .lede{margin-top:22px;font-size:19px;color:var(--ink-soft);max-width:56ch;}
+@media (max-width:520px){.hero{padding:40px 0 42px;}.hero .lede{font-size:17px;}}
+
+/* observations */
+.obs{display:grid;grid-template-columns:1fr 1fr;gap:0 44px;margin-top:34px;}
+.obs div{padding:20px 0;border-bottom:1px solid var(--rule);}
+.obs .n{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--measure-deep);}
+.obs p{margin-top:6px;font-size:17.5px;font-weight:600;letter-spacing:-.015em;line-height:1.3;}
+.obs small{display:block;margin-top:7px;font-size:14.5px;color:var(--ink-soft);font-weight:400;line-height:1.5;}
+@media (max-width:820px){.obs{grid-template-columns:1fr;}}
+
+/* variation */
+.varia{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:start;}
+.shotwrap{border:1px solid var(--rule);padding:18px;}
+.shotwrap img{width:100%;display:block;border:1px solid var(--rule);}
+.shotwrap .cap{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin-top:12px;display:flex;justify-content:space-between;gap:10px;}
+.wire{border:1.5px solid var(--ink);padding:18px;}
+.wire svg{width:100%;height:auto;display:block;background:#fff;}
+.wirectl{display:flex;align-items:center;gap:14px;margin-top:16px;flex-wrap:wrap;}
+.vcount{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink-soft);}
+.mult{margin-top:26px;border-top:1.5px solid var(--ink);padding-top:16px;
+  font-family:'IBM Plex Mono',monospace;font-size:15px;line-height:2;}
+.mult b{color:var(--measure-deep);font-weight:600;}
+@media (max-width:860px){.varia{grid-template-columns:1fr;gap:26px;}}
+
+/* comparison */
+.cmp{width:100%;border-collapse:collapse;margin-top:34px;}
+.cmp th,.cmp td{text-align:left;vertical-align:top;padding:15px 16px;border-bottom:1px solid var(--rule);font-size:15px;}
+.cmp thead th{border-bottom:1.5px solid var(--ink);font-size:16.5px;letter-spacing:-.015em;padding-bottom:12px;}
+.cmp thead th span{display:block;font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--measure-deep);
+  font-weight:400;letter-spacing:.04em;margin-bottom:5px;}
+.cmp tbody th{font-weight:500;color:var(--ink-soft);width:21%;}
+.cmp td{color:var(--ink-soft);}
+.cmp .pick{background:#FAFBFA;}
+.cmp thead .pick{box-shadow:inset 0 3px 0 var(--measure);}
+.cmp .pick td,.cmp td.pick{color:var(--ink);}
+.cmp .num{font-family:'IBM Plex Mono',monospace;color:var(--ink);font-weight:500;display:block;margin-bottom:3px;}
+@media (max-width:860px){
+  .cmp thead{position:absolute;left:-9999px;}
+  .cmp tr{display:block;border:1px solid var(--rule);margin-bottom:20px;}
+  .cmp tbody th{display:block;width:auto;background:var(--ink);color:#fff;font-weight:600;font-size:16px;border:0;}
+  .cmp td{display:block;border-bottom:1px solid var(--rule);}
+  .cmp td:last-child{border-bottom:0;}
+  .cmp td::before{content:attr(data-label);display:block;font-family:'IBM Plex Mono',monospace;
+    font-size:11px;letter-spacing:.04em;color:var(--measure-deep);margin-bottom:5px;}
+}
+.assump{margin-top:22px;font-size:13.5px;color:var(--ink-faint);max-width:70ch;}
+
+/* fair section */
+.fair{border:1.5px solid var(--ink);padding:26px;margin-top:32px;}
+.fair h3{font-size:19px;}
+.fair p{margin-top:10px;color:var(--ink-soft);max-width:66ch;font-size:15.5px;}
+
+/* three promises */
+.prom{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:34px;}
+.prom div{background:#fff;padding:24px 22px;}
+.prom .k{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--measure-deep);}
+.prom h3{margin:7px 0 8px;}
+.prom p{font-size:15px;color:var(--ink-soft);}
+@media (max-width:820px){.prom{grid-template-columns:1fr;}}
+
+/* google reviews */
+[hidden]{display:none!important;}
+.rv-top{display:grid;grid-template-columns:auto minmax(0,460px);justify-content:space-between;align-items:end;gap:26px 48px;
+  margin-top:34px;padding-bottom:28px;border-bottom:1.5px solid var(--ink);}
+.rv-score{font-size:clamp(46px,6vw,72px);font-weight:800;letter-spacing:-.045em;line-height:.9;}
+.rv-score small{display:block;margin-top:12px;font-size:14.5px;font-weight:500;letter-spacing:0;line-height:1.4;color:var(--ink-soft);}
+.rv-scale{position:relative;padding-bottom:22px;}
+.rv-track{position:relative;height:12px;border:1.5px solid var(--ink);}
+.rv-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:var(--measure);transition:width .7s cubic-bezier(.2,.7,.2,1);}
+.rv-ticks{height:8px;border-right:1px solid var(--ink);
+  background:repeating-linear-gradient(to right,var(--ink) 0 1px,transparent 1px 10%);}
+.rv-nums span{position:absolute;bottom:0;transform:translateX(-50%);font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--ink-soft);}
+.rv-nums span:first-child{transform:none;}
+.rv-nums span:last-child{transform:translateX(-100%);}
+.rv-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:0 44px;}
+.rv-list li{padding:24px 0;border-bottom:1px solid var(--rule);}
+.rv-meta{display:flex;justify-content:space-between;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);}
+.rv-meta b{font-weight:500;color:var(--measure-deep);}
+.rv-text{margin-top:10px;font-size:16px;line-height:1.6;max-width:62ch;white-space:pre-line;}
+.rv-text.is-clamped{display:-webkit-box;-webkit-line-clamp:6;-webkit-box-orient:vertical;overflow:hidden;}
+.rv-more{margin-top:8px;padding:0;border:0;background:none;font:inherit;font-size:14px;font-weight:600;color:var(--measure-deep);
+  text-decoration:underline;text-underline-offset:3px;cursor:pointer;}
+.rv-who{margin-top:14px;font-size:14.5px;font-weight:600;}
+.rv-who a{text-decoration:none;}
+.rv-who a:hover{text-decoration:underline;text-underline-offset:3px;}
+@media (max-width:820px){.rv-top{grid-template-columns:1fr;}.rv-list{grid-template-columns:1fr;}}
+
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px;}
+
+footer{border-top:1px solid var(--ink);}
+.foot{max-width:var(--max);margin:0 auto;padding:40px 28px 48px;display:grid;grid-template-columns:1.4fr 1fr;gap:36px;}
+.foot .legal{font-size:13px;color:var(--ink-faint);line-height:1.7;margin-top:18px;}
+.foot .meta{border-top:1px solid var(--rule);}
+.foot .meta div{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:13.5px;}
+.foot .meta dd{margin:0;font-family:'IBM Plex Mono',monospace;}
+.foot .meta dt{color:var(--ink-faint);}
+@media (max-width:760px){.foot{grid-template-columns:1fr;padding:34px 18px 42px;}}
+
+/* marquee scrolling */
+.marquee-wrap{overflow:hidden;margin:0;}
+.marquee-mask{overflow:hidden;width:100%;}
+.marquee-track{display:flex;width:200%;animation:scroll 40s linear infinite;gap:60px;}
+.marquee-set{display:flex;gap:60px;margin:0;padding:0;list-style:none;min-width:auto;}
+.marquee-set li{flex-shrink:0;display:flex;align-items:center;}
+.marquee-set img{height:60px;width:auto;object-fit:contain;opacity:.65;transition:opacity .2s;}
+.marquee-set img:hover{opacity:1;}
+@keyframes scroll{0%{transform:translateX(0);}100%{transform:translateX(-50%);}}
+
+@media (prefers-reduced-motion:reduce){.marquee-track{animation:none;}}
+</style>
+</head>
+<body>
+
+<div class="rail" aria-hidden="true"></div>
+
+<header>
+  <div class="bar">
+    <a class="mark" href="index.html"><span class="name">GAUGE</span><span class="ticks" aria-hidden="true"></span></a>
+    <nav>
+      <a href="index.html#format">Format</a>
+      <a href="om-oss.html" aria-current="page">Om oss</a>
+    </nav>
+    <a class="btn" href="kassa.html">Snabbkassa</a>
+  </div>
+</header>
+
+<main>
+
+<div class="hero"><div class="wrap">
+  <h1>Vi älskar vad ni gör. Vi gör bara det andra.</h1>
+  <p class="lede">Ni är kreativa geniet. Ni skriver kopian som säljer, ni kommunicerar med klienten, ni förstår marknaden. Vi älskar det. Vi älskar också animerad reklam — men vi gillar inte att animerad reklam blir dålig för att den ska bli billig eller snabb. Därför finns Gauge.</p>
+</div></div>
+
+<!-- COMPANIES WE'VE WORKED WITH -->
+<section><div class="wrap sec">
+  <div class="sec-head"><h2>Companies we've worked with</h2><span class="tag">klienter</span></div>
+  
+  <div class="marquee-wrap" style="margin-top:36px;">
+    <div class="marquee-mask">
+      <div class="marquee-track">
+        <ul class="marquee-set">
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1786024828/monitum_yitt4l.svg" alt="PSA Solutions" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080957/dPHg1IGArtMHUYLmHAWQ1GcARP4_gjhscr.avif" alt="Nordic Fintech Summit" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080967/images_oguyij.png" alt="Open Payments" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/zwapgrip-logo_nmbe6a.webp" alt="Cardboard" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1786024855/LOGO_PSA_2022_COLOUR_BLACK_SMALL-1_do74vo.png" alt="PSA Solutions" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1786024828/monitum_yitt4l.svg" alt="PSA Solutions" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080957/dPHg1IGArtMHUYLmHAWQ1GcARP4_gjhscr.avif" alt="Nordic Fintech Summit" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080967/images_oguyij.png" alt="Open Payments" /></li>
+          <li><img src="https://res.cloudinary.com/dxhph3qls/image/upload/v1783080968/zwapgrip-logo_nmbe6a.webp" alt="Cardboard" /></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="cta" style="margin-top:40px;">
+    <a class="btn btn-ghost" href="https://creativeperformancemarketing.substack.com/" target="_blank" rel="noopener">Read the Newsletter</a>
+  </div>
+</div></section>
+
+<!-- OBSERVATIONER -->
+<section><div class="wrap sec">
+  <div class="sec-head"><h2>Vi förstår er helt och hållet.</h2><span class="tag">från hjärtat</span></div>
+  <p class="sec-sub">Vi vet vad det är att sitta framför en klient som behöver fem annonser senast på fredag. Vi vet att ni redan är kreativa genierna. Ni skriver kopian. Ni väljer bilderna. Ni är visionen. Vi vill bara göra det möjligt för er.</p>
+
+  <div class="obs">
+    <div>
+      <span class="n">01</span>
+      <p>Ni har redan gjort det svåra.
+      <small>Ni skrev kopian. Ni sålde in den till klienten. Ni vet exakt vad som ska hända. Det vi gör är bara ta det över mållinjen — snygga, fast och prisvärt.</small></p>
+    </div>
+    <div>
+      <span class="n">02</span>
+      <p>Design slop löser inget.
+      <small>En illa gjord animering gör annonsen sämre, inte bättre. Det vi levererar är handgjord rörelsdesign — varje frame räknas. Eller ingenting.</small></p>
+    </div>
+    <div>
+      <span class="n">03</span>
+      <p>Fler möten betyder längre tider.
+      <small>Vi skickar en form. Ni fyller i rubriker, färger, bilder. Vi levererar två dagar senare. Ingen презентация, ingen gissning, ingen omvägen via en designer som heter någon tredje part.</small></p>
+    </div>
+    <div>
+      <span class="n">04</span>
+      <p>Höst och vår är inte dåliga för er.
+      <small>När volymen tredubblas klarar vi det. Ingen övertid för er interna folk, inget jäkt. Vi skalas upp utan att ni behöver anställa eller säga upp.</small></p>
+    </div>
+    <div>
+      <span class="n">05</span>
+      <p>En kommentar är gratis.
+      <small>Första feedback-rundan ingår. Det räcker ofta. Om ni behöver en andra runda kostar det 750 kronor per annons och tar 48 timmar till. Aldrig mer.</small></p>
+    </div>
+    <div>
+      <span class="n">06</span>
+      <p>Priset är priset.
+      <small>1 975 kronor för en annons. 1 360 kronor när ni beställer tio. 995 kronor när ni låser in tjugofem. Inget blir dyrare senare. Ingen offert. Bara filer och en faktura.</small></p>
+    </div>
+  </div>
+</div></section>
+
+
+
+<!-- JÄMFÖRELSE -->
+<section><div class="wrap sec">
+  <div class="sec-head"><h2>Era timmar är för viktiga för allt annat.</h2><span class="tag">räkneexempel · 2026</span></div>
+  <p class="sec-sub">Vi tror inte på att ni ska göra animation själva eller anställa animatörer. Ni är redan för bra på det ni gör. Här är vad annars skulle hända med en annons:</p>
+
+  <table class="cmp">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col"><span>alternativ A</span>Ni gör den själva</th>
+        <th scope="col"><span>alternativ B</span>Ni anställer in</th>
+        <th scope="col" class="pick"><span>alternativ C</span>Gauge gör det</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Tid till leverans</th>
+        <td data-label="Ni själva"><span class="num">2–3 veckor</span>Mellan alla andra uppdrag. Det finns alltid något som blir viktigare.</td>
+        <td data-label="Anställd"><span class="num">3–5 veckor</span>Rekrytering och uppvärmning innan full takt är möjlig.</td>
+        <td data-label="Gauge" class="pick"><span class="num">48 timmar</span>Fredag kväll. Annonsen är klar på söndag kvällen.</td>
+      </tr>
+      <tr>
+        <th scope="row">Kostnad första året</th>
+        <td data-label="Ni själva"><span class="num">Omfattande</span>Er tid. Kurser, licenser, hårdvara, debugging på fredag kväll.</td>
+        <td data-label="Anställd"><span class="num">750 000 kr+</span>Lön, arbetsgivaravgifter, arbetsplats, allt innan en enda annons.</td>
+        <td data-label="Gauge" class="pick"><span class="num">Följer volymen</span>Ni betalar bara för det ni beställer. Inte för tomma veckor.</td>
+      </tr>
+      <tr>
+        <th scope="row">Kostnad per annons</th>
+        <td data-label="Ni själva"><span class="num">Okänd</span>Ligger utspridd på folk som redan har andra jobb.</td>
+        <td data-label="Anställd"><span class="num">4 000+ kr</span>Även när ni bara behöver tio annonser per månad.</td>
+        <td data-label="Gauge" class="pick"><span class="num">995–1 975 kr</span>Beroende på volym. Aldrig dyrare än priset säger.</td>
+      </tr>
+      <tr>
+        <th scope="row">November och maj</th>
+        <td data-label="Ni själva">Ni tar tid från sälj, kundmöten och strategi. Allt andra blir långsammare.</td>
+        <td data-label="Anställd">En person går inte att fördubbla. Övertid och stress blir normen.</td>
+        <td data-label="Gauge" class="pick">Vi ökar kapaciteten. Ni höjer priset åt klienten. Win win.</td>
+      </tr>
+      <tr>
+        <th scope="row">Vad ni blir bättre på</th>
+        <td data-label="Ni själva">Animation. Men ni ville ju inte lära er animation.</td>
+        <td data-label="Anställd">Man hoppas det. Men risken är hög — en ny person gör inte er bättre på sälj.</td>
+        <td data-label="Gauge" class="pick">Sälj. Strategi. Kopicreation. Det ni redan älskar och är bra på.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="assump">Vi är helt biasade här. Men räknestycket går att justera — vad skulle kunna få alternativ A eller B att vinna?</p>
+</div></section>
+        <td data-label="Egna mallar">Att bygga mallar.</td>
+        <td data-label="Anställd">Att producera.</td>
+        <td data-label="Sälj och kund" class="pick">Att sälja, behålla kunder och ta betalt för strategi. Det ni faktiskt har marginal på.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="fair">
+    <h3>Vi är inte för alla. Vi är för er.</h3>
+    <p>Behöver ni någon i rummet varje dag som kan diskutera strategi? Jobbar ni mycket med varumärkesfilm eller längre format? Producerar ni till kanaler långt bortom Meta? — då är vi fel. Vi älskar Meta-annonser i åttio åtta sekunder eller mindre. Det är allt vi gör. Vi är helt okej med att vara helt okej med det vi är bra på.</p>
+  </div>
+</div></section>
+
+<!-- GOOGLE-OMDÖMEN -->
+<section id="omdomen"><div class="wrap sec">
+  <div class="sec-head"><h2 id="rvTitle">Vad byråer som använder Gauge säger.</h2><span class="tag" id="rvTag" hidden>från google</span></div>
+  <p class="sec-sub" id="rvSub">Ärlighet innebär att visa vad andra säger. Här är det utan filter eller redigering.</p>
+
+  <div id="rvLive" hidden>
+    <div class="rv-top">
+      <p class="rv-score"><span id="rvNum"></span><small id="rvCount"></small></p>
+      <div class="rv-scale" aria-hidden="true">
+        <div class="rv-track"><span class="rv-fill" id="rvFill"></span></div>
+        <div class="rv-ticks"></div>
+        <div class="rv-nums"><span style="left:0">0</span><span style="left:20%">1</span><span style="left:40%">2</span><span style="left:60%">3</span><span style="left:80%">4</span><span style="left:100%">5</span></div>
+      </div>
+    </div>
+    <ul class="rv-list" id="rvList"></ul>
+  </div>
+
+  <div class="cta">
+    <a class="btn" href="https://g.page/r/CWTavgpLh4chECE/review" target="_blank" rel="noopener">Skriv ett omdöme på Google</a>
+    <a class="btn btn-ghost" id="rvAll" href="#" target="_blank" rel="noopener" hidden>Läs alla omdömen på Google</a>
+  </div>
+</div></section>
+
+<!-- LÖFTEN -->
+<section><div class="wrap sec">
+  <h2>Tre saker vi älskar att göra.</h2>
+  <div class="prom">
+    <div><span class="k">handgjord</span><h3>High Quality. Rörligt. För reala.</h3><p>Inte template-slop. Inte AI-genererat. Handgjord animering där varje frame är övervägt. Vi gör det vi älskar, och det ser man.</p></div>
+    <div><span class="k">snabb</span><h3>Fast som blixten. 48 timmar.</h3><p>Fredag kväll. Söndag kväll har ni två versioner i två format. Aldrig dröjsmål, aldrig överraskningar. Bara filer.</p></div>
+    <div><span class="k">prisvärt</span><h3>Affordable för hardworking agencies.</h3><p>995–1 975 kronor per annons. Inget blir dyrare senare. Ingen offert. Bara ett pris och en deadline.</p></div>
+  </div>
+  <div class="cta">
+    <a class="btn" href="index.html#format">Välj format</a>
+    <a class="btn btn-ghost" href="index.html#kalkyl">Räkna på volymen</a>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <h2 style="max-width:18ch;">Första annonsen är gratis.</h2>
+      <p class="sec-sub">Testa flödet på en riktig annons innan ni bestämmer er för något. Vi fakturerar 0 kr för den första.</p>
+      <p style="margin-top:22px;"><a class="btn" href="index.html#format">Välj format</a></p>
+      <p class="legal">
+        Gauge drivs av Alexandra Grisanti, enskild firma med säte i Stockholm.<br>
+        Momsreg.nr SE930825284101 · Godkänd för F-skatt · alexandra@alexandrastudio.se<br>
+        Alla priser anges exklusive moms. Betalningsvillkor 30 dagar netto. Faktura skickas samlat en gång i månaden.
+      </p>
+    </div>
+    <dl class="meta">
+      <div><dt>Leveranstid</dt><dd>48 h</dd></div>
+      <div><dt>Format per order</dt><dd>9:16, 1:1</dd></div>
+      <div><dt>Filtyper</dt><dd>MP4, ProRes</dd></div>
+      <div><dt>Kommentarsrunda 1</dt><dd>ingår, ingen extra tid</dd></div>
+      <div><dt>Kommentarsrunda 2+</dt><dd>750 kr, +48 h</dd></div>
+      <div><dt>Priser</dt><dd>995–1 975 kr exkl. moms</dd></div>
+      <div><dt>Betalningsvillkor</dt><dd>30 dagar netto</dd></div>
+      <div><dt>Läs mer</dt><dd><a href="https://creativeperformancemarketing.substack.com/" target="_blank" rel="noopener">Creative Performance Marketing</a></dd></div>
+    </dl>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var V = [
+    {c:'#0F6E78', h1:208, h2:156, t:[66,66,66,66], n:'001'},
+    {c:'#B8320D', h1:164, h2:196, t:[54,72,60,78], n:'019'},
+    {c:'#16232A', h1:232, h2:118, t:[78,58,66,54], n:'042'},
+    {c:'#7A5C12', h1:186, h2:172, t:[62,66,74,62], n:'067'},
+    {c:'#2B4C7E', h1:220, h2:136, t:[70,54,58,70], n:'088'},
+    {c:'#3F6B3A', h1:174, h2:204, t:[58,78,66,58], n:'114'}
+  ];
+  var i = 0;
+
+  function apply(v){
+    document.getElementById('w-bg').setAttribute('fill', v.c);
+    document.getElementById('w-badge').setAttribute('fill', v.c);
+    document.getElementById('w-cta').setAttribute('fill', v.c);
+    var h1 = document.getElementById('w-h1'), h2 = document.getElementById('w-h2');
+    h1.setAttribute('width', v.h1); h1.setAttribute('x', (300 - v.h1) / 2);
+    h2.setAttribute('width', v.h2); h2.setAttribute('x', (300 - v.h2) / 2);
+    ['w-t1','w-t2','w-t3','w-t4'].forEach(function(id, k){
+      var el = document.getElementById(id), w = v.t[k];
+      el.setAttribute('width', w);
+      el.setAttribute('x', (k === 1 || k === 3) ? (282 - w) : 24);
+    });
+    document.getElementById('vCount').textContent = 'variant ' + v.n + ' / 120';
+  }
+
+  document.getElementById('nextVar').addEventListener('click', function(){
+    i = (i + 1) % V.length;
+    apply(V[i]);
+  });
+  apply(V[0]);
+})();
+</script>
+
+<script>
+/* Google reviews
+   Without a key and Place ID, the section just shows the "write a review" button.
+   Fill in both values to load live reviews (Google returns up to 5). */
+(function(){
+  var GOOGLE_API_KEY  = '';   // Maps JavaScript API key, restricted to your domain
+  var GOOGLE_PLACE_ID = '';   // starts with "ChIJ..."
+
+  if (!GOOGLE_API_KEY || !GOOGLE_PLACE_ID) return;
+
+  var $ = function(id){ return document.getElementById(id); };
+  var section = $('omdomen');
+
+  function fmt(n){ return n.toLocaleString('sv-SE', {minimumFractionDigits:1, maximumFractionDigits:1}); }
+  function safeUrl(u){ return (typeof u === 'string' && u.indexOf('https://') === 0) ? u : null; }
+
+  function render(place){
+    var reviews = (place.reviews || []).filter(function(r){ return r.text; });
+    if (!place.rating || !reviews.length) return;
+
+    $('rvTitle').textContent = 'Vad kunderna säger.';
+    $('rvSub').textContent = 'Omdömen från vår Google-profil, hämtade direkt och oredigerade.';
+    $('rvTag').hidden = false;
+
+    var count = place.userRatingCount || reviews.length;
+    $('rvNum').textContent = fmt(place.rating);
+    $('rvCount').textContent = 'av 5, baserat på ' + count + (count === 1 ? ' omdöme' : ' omdömen');
+
+    var mapsUrl = safeUrl(place.googleMapsURI);
+    if (mapsUrl){ $('rvAll').href = mapsUrl; $('rvAll').hidden = false; }
+
+    $('rvLive').hidden = false;
+
+    var list = $('rvList');
+    reviews.forEach(function(r){
+      var li = document.createElement('li');
+
+      var meta = document.createElement('div');
+      meta.className = 'rv-meta';
+      var score = document.createElement('b');
+      score.textContent = 'betyg ' + r.rating + ' av 5';
+      var when = document.createElement('span');
+      when.textContent = r.relativePublishTimeDescription || '';
+      meta.append(score, when);
+
+      var text = document.createElement('p');
+      text.className = 'rv-text is-clamped';
+      text.textContent = r.text;
+
+      var who = document.createElement('p');
+      who.className = 'rv-who';
+      var a = r.authorAttribution || {};
+      var authorUrl = safeUrl(a.uri);
+      if (authorUrl){
+        var link = document.createElement('a');
+        link.href = authorUrl; link.target = '_blank'; link.rel = 'noopener';
+        link.textContent = a.displayName || 'Google-användare';
+        who.append(link);
+      } else {
+        who.textContent = a.displayName || 'Google-användare';
+      }
+
+      li.append(meta, text, who);
+      list.append(li);
+
+      if (text.scrollHeight > text.clientHeight + 2){
+        var more = document.createElement('button');
+        more.type = 'button'; more.className = 'rv-more';
+        more.textContent = 'Visa hela omdömet';
+        more.setAttribute('aria-expanded', 'false');
+        more.addEventListener('click', function(){
+          var open = text.classList.toggle('is-clamped') === false;
+          more.textContent = open ? 'Visa mindre' : 'Visa hela omdömet';
+          more.setAttribute('aria-expanded', String(open));
+        });
+        text.after(more);
+      } else {
+        text.classList.remove('is-clamped');
+      }
+    });
+
+    requestAnimationFrame(function(){ $('rvFill').style.width = (place.rating / 5 * 100) + '%'; });
+  }
+
+  window.gaugeInitReviews = function(){
+    google.maps.importLibrary('places')
+      .then(function(lib){
+        var place = new lib.Place({ id: GOOGLE_PLACE_ID, requestedLanguage: 'sv' });
+        return place.fetchFields({ fields: ['rating', 'userRatingCount', 'reviews', 'googleMapsURI'] })
+          .then(function(){ render(place); });
+      })
+      .catch(function(err){ console.warn('Google-omdömen kunde inte laddas:', err); });
+  };
+
+  // Only call Google when the visitor scrolls near the section (fewer billed requests).
+  var loaded = false;
+  function load(){
+    if (loaded) return; loaded = true;
+    var s = document.createElement('script');
+    s.src = 'https://maps.googleapis.com/maps/api/js?key=' + encodeURIComponent(GOOGLE_API_KEY) +
+            '&loading=async&callback=gaugeInitReviews';
+    s.async = true;
+    document.head.append(s);
+  }
+  if ('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      if (entries[0].isIntersecting){ io.disconnect(); load(); }
+    }, { rootMargin: '600px 0px' });
+    io.observe(section);
+  } else {
+    load();
+  }
+})();
+</script>
+
+</body>
+</html>

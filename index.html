@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Gauge | Rörliga Meta-annonser på 48 timmar. Professionell videoproduktion för Meta-annonser med snabb leverans. Från 1975 kr.">
+<meta name="keywords" content="Meta-annonser, videoproduktion, annonser, reklam, Stockholm">
+<meta name="author" content="Alexandra Grisanti">
+<meta property="og:title" content="Gauge — rörliga Meta-annonser på 48 timmar">
+<meta property="og:description" content="Professionell videoproduktion för Meta-annonser med snabb leverans.">
+<meta property="og:type" content="website">
+<title>Gauge — rörliga Meta-annonser på 48 timmar</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230F6E78'/><text x='50' y='70' font-size='70' font-weight='bold' text-anchor='middle' fill='%23fff' font-family='sans-serif'>G</text></svg>" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;--ink:#16232A;--ink-soft:#4E6169;--ink-faint:#8FA0A6;
+  --rule:#DFE4E2;--measure:#0F6E78;--measure-deep:#0A4F57;--hazard:#B8320D;--max:1200px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.026em;line-height:1.09;}
+h1{font-size:clamp(30px,4.4vw,54px);font-weight:800;letter-spacing:-.036em;}
+h2{font-size:clamp(24px,3vw,35px);}
+h3{font-size:18px;letter-spacing:-.012em;}
+p{margin:0;}
+a{color:inherit;}
+img{max-width:100%;}
+:focus-visible{outline:2px solid var(--measure);outline-offset:3px;}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.04em;color:var(--measure-deep);}
+
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;padding:13px 22px;
+  border:1.5px solid var(--ink);background:var(--ink);color:#fff;border-radius:2px;cursor:pointer;text-decoration:none;
+  font-family:inherit;transition:background .14s linear,border-color .14s linear,color .14s linear;}
+.btn:hover{background:var(--measure-deep);border-color:var(--measure-deep);}
+.btn-ghost{background:transparent;color:var(--ink);}
+.btn-ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink);}
+
+.rail{position:fixed;left:0;top:0;bottom:0;width:30px;z-index:5;border-right:1px solid var(--rule);pointer-events:none;}
+.rail::after{content:"";position:absolute;right:0;top:0;bottom:0;width:14px;
+  background:repeating-linear-gradient(to bottom,var(--rule) 0 1px,transparent 1px 22px);}
+@media (max-width:1180px){.rail{display:none;}}
+
+/* header */
+header{border-bottom:1px solid var(--rule);position:sticky;top:0;background:#fff;z-index:30;}
+.bar{display:flex;align-items:center;gap:16px;padding:13px 28px;max-width:var(--max);margin:0 auto;}
+.mark{display:flex;flex-direction:column;gap:3px;margin-right:auto;text-decoration:none;}
+.mark .name{font-weight:800;font-size:20px;letter-spacing:.17em;line-height:1;}
+.mark .ticks{height:6px;width:100px;opacity:.5;background:repeating-linear-gradient(to right,var(--ink) 0 1px,transparent 1px 8px);}
+.bar nav{display:flex;gap:20px;margin-right:4px;}
+.bar nav a{font-size:14.5px;font-weight:500;color:var(--ink-soft);text-decoration:none;}
+.bar nav a:hover{color:var(--measure-deep);text-decoration:underline;text-underline-offset:4px;}
+.bar nav a[aria-current]{color:var(--ink);font-weight:600;}
+@media (max-width:560px){.bar nav{gap:13px;}.bar nav a{font-size:13.5px;}}
+.cartbtn{position:relative;display:inline-flex;align-items:center;gap:9px;background:transparent;border:1.5px solid var(--ink);
+  border-radius:2px;padding:9px 14px;cursor:pointer;font-family:inherit;font-size:14.5px;font-weight:600;color:var(--ink);}
+.cartbtn:hover{background:var(--ink);color:#fff;}
+.cartbtn svg{width:17px;height:17px;}
+.cartbtn .n{font-family:'IBM Plex Mono',monospace;font-size:12px;min-width:19px;height:19px;line-height:19px;
+  border-radius:50%;background:var(--measure);color:#fff;text-align:center;}
+@media (max-width:520px){.cartbtn .lbl{display:none;}.bar{padding:12px 18px;}}
+
+.strip{background:var(--ink);color:#fff;}
+.strip .in{max-width:var(--max);margin:0 auto;padding:10px 28px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;font-size:14.5px;}
+.strip b{font-weight:600;}
+.strip span{color:#A9BCC0;}
+@media (max-width:520px){.strip .in{padding:10px 18px;font-size:13.5px;}}
+
+/* hero */
+.hero{padding:60px 0 66px;}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:56px;align-items:center;}
+.hero h1{max-width:15ch;}
+.lede{margin-top:22px;font-size:18.5px;color:var(--ink-soft);max-width:48ch;}
+.acts{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;}
+.stamp{margin-top:32px;padding-top:16px;border-top:1px solid var(--rule);display:flex;gap:28px;flex-wrap:wrap;}
+.stamp div{display:flex;flex-direction:column;}
+.stamp .v{font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:500;}
+.stamp .k{font-size:13px;color:var(--ink-faint);}
+.figure{display:flex;justify-content:center;}
+.figure svg{max-width:100%;height:auto;}
+@media (max-width:920px){.hero-grid{grid-template-columns:1fr;gap:36px;}.hero{padding:40px 0 46px;}}
+@media (max-width:520px){.wrap{padding:0 18px;}.lede{font-size:17px;}.stamp{gap:20px;}}
+
+.dash{stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 1.1s cubic-bezier(.3,.7,.3,1) forwards;}
+@keyframes draw{to{stroke-dashoffset:0;}}
+.f1{opacity:0;animation:fin .5s linear .85s forwards;}
+.f2{opacity:0;animation:fin .5s linear 1.15s forwards;}
+@keyframes fin{to{opacity:1;}}
+
+section{border-top:1px solid var(--rule);}
+.sec{padding-top:60px;padding-bottom:60px;}
+@media (max-width:520px){.sec{padding-top:42px;padding-bottom:42px;}}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;}
+.sec-sub{margin-top:14px;color:var(--ink-soft);max-width:64ch;}
+
+/* format grid — each tile is the order button */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:34px;background:var(--rule);border:1px solid var(--rule);}
+.fmt{background:#fff;padding:16px;display:flex;flex-direction:column;text-align:left;border:0;
+  font-family:inherit;cursor:pointer;color:inherit;transition:background .12s linear;}
+.fmt:hover,.fmt:focus-visible{background:#FAFBFA;}
+.shot{position:relative;aspect-ratio:4/5;border:1px solid var(--rule);overflow:hidden;background:#F4F5F4;}
+.shot img{width:100%;height:100%;object-fit:cover;display:block;}
+.shot .rt{position:absolute;right:0;bottom:0;background:#fff;border-left:1px solid var(--rule);border-top:1px solid var(--rule);
+  font-family:'IBM Plex Mono',monospace;font-size:10.5px;padding:3px 6px;color:var(--ink-soft);}
+.shot .go{position:absolute;inset:0;background:rgba(22,35,42,.86);color:#fff;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;gap:6px;opacity:0;transition:opacity .15s linear;padding:14px;text-align:center;}
+.shot .go b{font-size:16px;font-weight:700;}
+.shot .go span{font-family:'IBM Plex Mono',monospace;font-size:13px;color:#A9BCC0;}
+.fmt:hover .go,.fmt:focus-visible .go{opacity:1;}
+.blank{display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;
+  background:repeating-linear-gradient(45deg,#F2F4F3 0 6px,#fff 6px 12px);}
+.blank em{font-style:normal;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);line-height:1.6;}
+.fmt .c{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--measure-deep);margin-top:13px;letter-spacing:.05em;}
+.fmt h3{margin:3px 0 6px;font-size:17px;}
+.fmt p{font-size:14.5px;color:var(--ink-soft);flex:1;}
+.fmt .u{margin-top:14px;font-family:'IBM Plex Mono',monospace;font-size:14.5px;display:flex;justify-content:space-between;gap:8px;}
+.fmt .u i{font-style:normal;color:var(--measure-deep);}
+@media (max-width:1040px){.grid{grid-template-columns:repeat(3,1fr);}}
+@media (max-width:820px){.grid{grid-template-columns:repeat(2,1fr);}}
+@media (max-width:520px){.grid{grid-template-columns:1fr;}.fmt .go{opacity:1;background:linear-gradient(to top,rgba(22,35,42,.9) 0%,rgba(22,35,42,0) 45%);justify-content:flex-end;}}
+
+/* checkout — moved to kassa.html */
+
+/* pricing */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:32px;}
+.tier{background:#fff;padding:24px 22px;}
+.tier.best{box-shadow:inset 0 3px 0 var(--measure);}
+.tier .q{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink-faint);}
+.tier .big{font-family:'IBM Plex Mono',monospace;font-size:30px;font-weight:500;letter-spacing:-.02em;margin-top:6px;}
+.tier .per{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--measure-deep);margin-top:4px;}
+.tier p{font-size:14.5px;color:var(--ink-soft);margin-top:12px;}
+@media (max-width:760px){.tiers{grid-template-columns:1fr;}}
+
+.terms{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:28px;}
+.terms div{padding:13px 0;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;gap:14px;font-size:15px;}
+.terms dt{color:var(--ink-soft);}
+.terms dd{margin:0;font-family:'IBM Plex Mono',monospace;font-weight:500;text-align:right;}
+@media (max-width:700px){.terms{grid-template-columns:1fr;}}
+
+.becomecust{margin-top:34px;border:1.5px solid var(--ink);padding:26px;display:flex;gap:26px;align-items:center;justify-content:space-between;flex-wrap:wrap;}
+.becomecust h3{font-size:21px;}
+.becomecust p{font-size:15px;color:var(--ink-soft);margin-top:6px;max-width:52ch;}
+
+/* calculator */
+.calc2{display:grid;grid-template-columns:.82fr 1.18fr;gap:1px;background:var(--rule);border:1px solid var(--rule);margin-top:32px;}
+.calc-ctl,.calc-res{background:#fff;padding:26px 24px;}
+.ctl{margin-bottom:22px;}
+.ctl label{display:block;font-size:14.5px;color:var(--ink-soft);}
+.ctl .row{display:flex;align-items:center;gap:14px;margin-top:9px;}
+.ctl output{font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:500;min-width:42px;}
+input[type=range]{flex:1;accent-color:var(--measure);height:26px;min-width:0;}
+.hint{font-size:13.5px;color:var(--ink-faint);border-top:1px solid var(--rule);padding-top:14px;}
+.reslab{font-size:14px;color:var(--ink-soft);}
+.resbig{font-family:'IBM Plex Mono',monospace;font-size:clamp(36px,5.6vw,52px);font-weight:600;letter-spacing:-.03em;line-height:1.04;margin-top:3px;}
+.ressub{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--ink-faint);margin-top:7px;}
+.savebadge{display:inline-block;margin-top:14px;border:1px solid var(--measure);color:var(--measure-deep);
+  font-family:'IBM Plex Mono',monospace;font-size:13px;padding:4px 10px;}
+.savebadge[hidden]{display:none;}
+.curve{width:100%;height:auto;display:block;margin:20px 0 4px;}
+.reslines{margin-top:12px;}
+.reslines div{display:flex;justify-content:space-between;gap:14px;padding:8px 0;border-bottom:1px solid var(--rule);font-size:14.5px;}
+.reslines dt{color:var(--ink-soft);}
+.reslines dd{margin:0;font-family:'IBM Plex Mono',monospace;font-weight:500;}
+.reslines .tot{border-bottom:0;border-top:1.5px solid var(--ink);padding-top:12px;}
+.reslines .tot dt{color:var(--ink);font-weight:600;}
+.reslines .tot dd{font-size:19px;font-weight:600;}
+.vat{margin-top:11px;font-size:12.5px;color:var(--ink-faint);}
+.eta{margin-top:16px;border:1px solid var(--rule);padding:13px;font-size:14px;color:var(--ink-soft);}
+.eta b{font-family:'IBM Plex Mono',monospace;color:var(--ink);font-weight:600;}
+@media (max-width:820px){.calc2{grid-template-columns:1fr;}}
+
+/* margins */
+.margins{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px;align-items:start;}
+.figrow{display:flex;justify-content:center;gap:22px;padding:6px 0 18px;flex-wrap:wrap;}
+.figrow svg{max-width:100%;height:auto;}
+.dl{border-top:1px solid var(--rule);margin-top:6px;}
+.dl div{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:14.5px;}
+.dl dt{color:var(--ink-soft);}
+.dl dd{margin:0;font-family:'IBM Plex Mono',monospace;font-weight:500;}
+.demo{border:1px solid var(--rule);padding:22px;}
+.demoframe{position:relative;width:100%;max-width:240px;aspect-ratio:9/16;margin:0 auto;border:2px solid var(--ink);overflow:hidden;}
+.demoframe img{width:100%;height:100%;object-fit:cover;display:block;}
+.ov{position:absolute;left:0;right:0;opacity:0;transition:opacity .2s linear;
+  background:repeating-linear-gradient(45deg,rgba(184,50,13,.42) 0 3px,rgba(255,255,255,.82) 3px 7px);}
+.ov.top{top:0;height:14.06%;border-bottom:1.5px dashed var(--hazard);}
+.ov.bot{bottom:0;height:20%;border-top:1.5px dashed var(--hazard);}
+.demoframe.show .ov{opacity:1;}
+.democtl{display:flex;align-items:center;gap:14px;margin-top:18px;flex-wrap:wrap;}
+.democtl .note{font-size:13px;color:var(--ink-faint);font-family:'IBM Plex Mono',monospace;}
+@media (max-width:860px){.margins{grid-template-columns:1fr;gap:30px;}}
+
+/* method */
+.made{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:32px;}
+.made-list{border-top:1px solid var(--ink);}
+.made-list div{padding:18px 0;border-bottom:1px solid var(--rule);}
+.made-list h3{font-size:17px;}
+.made-list p{font-size:15px;color:var(--ink-soft);margin-top:5px;}
+@media (max-width:860px){.made{grid-template-columns:1fr;gap:24px;}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:34px;background:var(--rule);border:1px solid var(--rule);}
+.step{background:#fff;padding:22px 20px;}
+.step .n{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--measure-deep);}
+.step h3{margin:8px 0 7px;font-size:17px;}
+.step p{font-size:14.5px;color:var(--ink-soft);}
+@media (max-width:920px){.steps{grid-template-columns:1fr 1fr;}}
+@media (max-width:540px){.steps{grid-template-columns:1fr;}}
+
+.nope{display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:28px;}
+.nope p{padding:13px 0 13px 30px;border-bottom:1px solid var(--rule);position:relative;font-size:16px;color:var(--ink-soft);}
+.nope p::before{content:"";position:absolute;left:2px;top:20px;width:15px;height:1.5px;background:var(--hazard);}
+@media (max-width:700px){.nope{grid-template-columns:1fr;}}
+
+footer{border-top:1px solid var(--ink);}
+.foot{max-width:var(--max);margin:0 auto;padding:42px 28px 52px;display:grid;grid-template-columns:1.4fr 1fr;gap:36px;}
+.foot .legal{font-size:13px;color:var(--ink-faint);line-height:1.7;margin-top:18px;}
+.foot .meta{border-top:1px solid var(--rule);}
+.foot .meta div{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px solid var(--rule);font-size:13.5px;}
+.foot .meta dd{margin:0;font-family:'IBM Plex Mono',monospace;}
+.foot .meta dt{color:var(--ink-faint);}
+@media (max-width:760px){.foot{grid-template-columns:1fr;padding:36px 18px 44px;}}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;}
+  .dash{stroke-dashoffset:0;}.f1,.f2{opacity:1;}
+}
+</style>
+</head>
+<body>
+
+<div class="rail" aria-hidden="true"></div>
+
+<header>
+  <div class="bar">
+    <a class="mark" href="#top"><span class="name">GAUGE</span><span class="ticks" aria-hidden="true"></span></a>
+    <nav>
+      <a href="#format" aria-current="page">Format</a>
+      <a href="om-oss.html">Om oss</a>
+    </nav>
+    <a class="btn" href="kassa.html" id="cartBtn">Snabbkassa</a>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="in">
+    <b>Första annonsen är gratis.</b>
+    <span>Har du inte beställt av oss förut bjuder vi på den första, så att du får testa flödet innan du betalar något.</span>
+  </div>
+</div>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Rörliga Meta-annonser på 48 timmar. 1 975 kr styck.</h1>
+      <p class="lede">Åtta färdiga format. Klicka på det du vill ha, fyll i underlaget, få tillbaka 9:16 och 1:1 med allt innanför Metas säkra yta. Inga möten, inga moodboards, inget offertsnack.</p>
+      <div class="acts">
+        <a class="btn" href="#format">Välj format</a>
+        <a class="btn btn-ghost" href="#sakra-ytan">Se säkra ytan</a>
+      </div>
+      <div class="stamp">
+        <div><span class="v">48 h</span><span class="k">Leveranstid</span></div>
+        <div><span class="v">2</span><span class="k">Format per order</span></div>
+        <div><span class="v">1 975 kr</span><span class="k">Per annons, exkl. moms</span></div>
+        <div><span class="v">0</span><span class="k">Möten</span></div>
+      </div>
+    </div>
+    <div class="figure">
+      <svg width="248" height="441" viewBox="0 0 216 384" role="img" aria-label="9:16-ram, 1080 × 1920 pixlar, med 270 pixlar topp och 384 pixlar botten markerade som gränssnittsytor.">
+        <defs><pattern id="hz" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+          <rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#B8320D" stroke-width="2.2" opacity=".5"/></pattern></defs>
+        <rect x="1" y="1" width="214" height="382" fill="#fff"/>
+        <rect x="1" y="1" width="214" height="54" fill="url(#hz)"/>
+        <rect x="1" y="307" width="214" height="76" fill="url(#hz)"/>
+        <g class="f1">
+          <rect x="18" y="86" width="120" height="13" fill="#16232A"/>
+          <rect x="18" y="105" width="164" height="13" fill="#16232A"/>
+          <rect x="18" y="124" width="86" height="13" fill="#16232A"/>
+          <rect x="18" y="164" width="180" height="96" fill="#F0F2F1"/>
+          <circle cx="108" cy="212" r="17" fill="#0F6E78"/>
+          <path d="M103 205 l13 7 -13 7 z" fill="#fff"/>
+          <rect x="18" y="275" width="74" height="20" fill="#0F6E78"/>
+        </g>
+        <rect class="dash" x="1" y="1" width="214" height="382" fill="none" stroke="#16232A" stroke-width="2"/>
+        <line class="f1" x1="1" y1="55" x2="215" y2="55" stroke="#B8320D" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <line class="f1" x1="1" y1="307" x2="215" y2="307" stroke="#B8320D" stroke-width="1.4" stroke-dasharray="5 4"/>
+        <g class="f2" stroke="#0F6E78" stroke-width="1.1" fill="none">
+          <line x1="-10" y1="1" x2="-10" y2="55"/><line x1="-14" y1="1" x2="-6" y2="1"/><line x1="-14" y1="55" x2="-6" y2="55"/>
+          <line x1="-10" y1="55" x2="-10" y2="307"/><line x1="-14" y1="307" x2="-6" y2="307"/>
+          <line x1="-10" y1="307" x2="-10" y2="383"/><line x1="-14" y1="383" x2="-6" y2="383"/>
+        </g>
+        <g class="f2" fill="#0A4F57" font-size="9.5" font-family="IBM Plex Mono, monospace">
+          <text x="222" y="31">270 px</text><text x="222" y="184">yta 1266 px</text><text x="222" y="350">384 px</text>
+        </g>
+        <text class="f2" x="1" y="-8" fill="#8FA0A6" font-size="9" font-family="IBM Plex Mono, monospace">1080 × 1920 · 9:16</text>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- FORMAT -->
+<section id="format"><div class="wrap sec">
+  <div class="sec-head"><h2>Åtta format. Klicka på ett för att beställa.</h2><span class="tag">rev 4.2 · 2026</span></div>
+  <p class="sec-sub">En annons per beställning. Du väljer format, skickar bilder, text och färger i formuläret, och får tillbaka MP4 och ProRes i både 9:16 och 1:1. Bilderna nedan visar stilen — innehållet blir ditt. Alla priser är exklusive moms.</p>
+
+  <div class="grid" id="grid">
+
+    <button class="fmt" type="button" data-id="G-01" data-name="iPhone-chatt"
+      data-page="g-01-iphone-chat.html"
+      data-form="https://forms.fillout.com/t/YOUR_FORM_G01"
+      data-img="https://res.cloudinary.com/dxhph3qls/image/upload/v1789488878/Screenshot_2026-09-15_at_18.14.07_lraobx.png">
+      <span class="shot">
+        <img loading="lazy" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1789488878/Screenshot_2026-09-15_at_18.14.07_lraobx.png" alt="iPhone-chatt med meddelanden.">
+        <span class="rt">9:16 + 1:1</span>
+        <span class="go"><b>Beställ</b><span>1 975 kr exkl. moms · 48 h</span></span>
+      </span>
+      <span class="c">G-01</span><h3>iPhone-chatt</h3>
+      <p>Autentisk iPhone-chattsekvens med meddelanden som tickar in ett i taget. Perfekt för konversationer, invändningar och säljsnack.</p>
+      <span class="u">1 975 kr <i>Beställ →</i></span>
+    </button>
+
+    <button class="fmt" type="button" data-id="G-02" data-name="Chattsekvens"
+      data-page="g-02-chattsekvens.html"
+      data-form="https://forms.fillout.com/t/YOUR_FORM_G02"
+      data-img="https://res.cloudinary.com/dxhph3qls/image/upload/v1789392753/780488379_1049327324632482_2601724409531350815_n_vq415l.jpg">
+      <span class="shot">
+        <img loading="lazy" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1789392753/780488379_1049327324632482_2601724409531350815_n_vq415l.jpg" alt="Chattkonversation mot svart bakgrund.">
+        <span class="rt">9:16 + 1:1</span>
+        <span class="go"><b>Beställ</b><span>1 975 kr exkl. moms · 48 h</span></span>
+      </span>
+      <span class="c">G-02</span><h3>Chattsekvens</h3>
+      <p>Meddelanden som tickar in ett i taget. Fungerar för invändningar, frågor och rakt säljsnack utan ljud.</p>
+      <span class="u">1 975 kr <i>Beställ →</i></span>
+    </button>
+
+    <button class="fmt" type="button" data-id="G-03" data-name="Unique Selling Points (USP)"
+      data-page="g-03-unique-selling-point.html"
+      data-form="https://forms.fillout.com/t/YOUR_FORM_G03"
+      data-img="https://res.cloudinary.com/dxhph3qls/image/upload/v1789565814/Screenshot_2026-09-16_at_15.36.34_ekzi4c.png">
+      <span class="shot">
+        <img loading="lazy" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1789565814/Screenshot_2026-09-16_at_15.36.34_ekzi4c.png" alt="Produkt i mitten med ikoner och påståenden runt om.">
+        <span class="rt">9:16 + 1:1</span>
+        <span class="go"><b>Beställ</b><span>1 975 kr exkl. moms · 48 h</span></span>
+      </span>
+      <span class="c">G-03</span><h3>Unique Selling Points (USP)</h3>
+      <p>Produkten i mitten, fyra påståenden med ikoner som fälls in runt omkring. Tät på information.</p>
+      <span class="u">1 975 kr <i>Beställ →</i></span>
+    </button>
+
+    <button class="fmt" type="button" data-id="G-07" data-name="Produktuppställning"
+    data-page="g-07-produktuppstallning.html"
+    data-form="https://forms.fillout.com/t/YOUR_FORM_G07"
+    data-img="https://res.cloudinary.com/dxhph3qls/image/upload/v1789561526/product_thumbnail_cz3gwd.png">
+    <span class="shot">
+      <img loading="lazy" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1789561526/product_thumbnail_cz3gwd.png" alt="Flera produkter utlagda mot ljus bakgrund med knapp.">
+      <span class="rt">9:16 + 1:1</span>
+      <span class="go"><b>Beställ</b><span>1 975 kr exkl. moms · 48 h</span></span>
+    </span>
+    <span class="c">G-07</span><h3>Produktuppställning</h3>
+    <p>Fyra till sex artiklar som glider in på plats och lägger sig till rätta. Avslutas med knapp.</p>
+    <span class="u">1 975 kr <i>Beställ →</i></span>
+  </button>
+
+
+<button class="fmt" type="button" data-id="G-06" data-name="3D-objekt"
+data-page="g-06-3d-objekt.html"
+data-form="https://forms.fillout.com/t/YOUR_FORM_G06"
+data-img="https://res.cloudinary.com/dxhph3qls/image/upload/v1789493052/Screenshot_2026-09-15_at_19.22.37_rmsaou.png">
+<span class="shot">
+  <img loading="lazy" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1789493052/Screenshot_2026-09-15_at_19.22.37_rmsaou.png" alt="3D-bokstäver med pristagg.">
+  <span class="rt">9:16 + 1:1</span>
+  <span class="go"><b>Beställ</b><span>1 975 kr exkl. moms · 48 h</span></span>
+</span>
+<span class="c">G-06</span><h3>3D-objekt</h3>
+<p>Ett ord, en siffra eller ett objekt renderat i 3D som studsar in. Bär ett erbjudande utan produktbild.</p>
+<span class="u">1 975 kr <i>Beställ →</i></span>
+</button>
+
+    <button class="fmt" type="button" data-id="G-05" data-name="Produktscen"
+      data-page="g-05-produktscen.html"
+      data-form="https://forms.fillout.com/t/YOUR_FORM_G05"
+      data-img="https://res.cloudinary.com/dxhph3qls/image/upload/v1789573004/Screenshot_2026-09-16_at_17.36.39_zlc5ij.png">
+      <span class="shot">
+        <img loading="lazy" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1789573004/Screenshot_2026-09-16_at_17.36.39_zlc5ij.png" alt="Produkt i miljö med rubrik och märken.">
+        <span class="rt">9:16 + 1:1</span>
+        <span class="go"><b>Beställ</b><span>1 975 kr exkl. moms · 48 h</span></span>
+      </span>
+      <span class="c">G-05</span><h3>Produktscen</h3>
+      <p>Produkten i en miljö med långsam rörelse, rubrik och märkning. För skönhet, mat och dryck.</p>
+      <span class="u">1 975 kr <i>Beställ →</i></span>
+    </button>
+
+
+  </div>
+</div></section>
+
+<!-- PRIS -->
+<section id="pris"><div class="wrap sec">
+  <h2>Priset står här. Det blir ingen offert.</h2>
+  <p class="sec-sub">Styckpriset sjunker med volymen och räknas av på månadens fakturaunderlag. Alla nivåer levereras på 48 timmar — fler annonser går inte långsammare, de går parallellt.</p>
+
+  <div class="tiers">
+    <div class="tier">
+      <span class="q">1–9 annonser</span>
+      <div class="big">1 975 kr</div>
+      <div class="per">per annons, exkl. moms</div>
+      <p>Två filer per annons, 9:16 och 1:1. En kommentarsrunda ingår.</p>
+    </div>
+    <div class="tier best">
+      <span class="q">10 annonser</span>
+      <div class="big">13 600 kr</div>
+      <div class="per">1 360 kr per annons, exkl. moms</div>
+      <p>Du sparar 6 150 kr. Vanligaste storleken inför en kampanjmånad.</p>
+    </div>
+    <div class="tier">
+      <span class="q">25 annonser</span>
+      <div class="big">24 875 kr</div>
+      <div class="per">995 kr per annons, exkl. moms</div>
+      <p>Du sparar 24 500 kr. Blanda format fritt inom volymen.</p>
+    </div>
+  </div>
+
+  <dl class="terms">
+    <div><dt>Priser</dt><dd>exkl. moms</dd></div>
+    <div><dt>Betalningsvillkor</dt><dd>30 dagar netto</dd></div>
+    <div><dt>Faktura</dt><dd>skickas samlat en gång i månaden</dd></div>
+    <div><dt>Första annonsen för nya kunder</dt><dd>0 kr</dd></div>
+    <div><dt>Kommentarsrunda 1</dt><dd>ingår, ingen extra tid</dd></div>
+    <div><dt>Kommentarsrunda 2 och framåt</dt><dd>750 kr, +48 h</dd></div>
+  </dl>
+
+  <div class="becomecust">
+    <div>
+      <h3>Bli kund</h3>
+      <p>Lägg upp ert varumärkeskit en gång — logotyp, typsnitt, färger och fakturauppgifter. Sedan går varje beställning på under en minut, och månadsfakturan samlar allt.</p>
+    </div>
+    <a class="btn" id="custBtn" href="#">Bli kund</a>
+  </div>
+</div></section>
+
+<!-- KALKYL -->
+<section id="kalkyl"><div class="wrap sec">
+  <h2>Så sjunker styckpriset med volymen.</h2>
+  <p class="sec-sub">Samma leveranstid på alla nivåer — fler annonser går parallellt, inte långsammare.</p>
+
+  <div class="calc2">
+    <div class="calc-ctl">
+      <div class="ctl">
+        <label for="cAds">Antal annonser</label>
+        <div class="row"><input type="range" id="cAds" min="1" max="40" value="10" step="1"><output id="oAds">10</output></div>
+      </div>
+      <div class="ctl">
+        <label for="cRev">Kommentarsrundor per annons</label>
+        <div class="row"><input type="range" id="cRev" min="0" max="3" value="1" step="1"><output id="oRev">1</output></div>
+      </div>
+      <p class="hint" id="revHint">Första rundan ingår i priset.</p>
+    </div>
+
+    <div class="calc-res">
+      <span class="reslab">Ditt pris per annons</span>
+      <div class="resbig" id="rUnit">1 360 kr</div>
+      <div class="ressub" id="rPerFile">680 kr per fil · två filer per annons, 9:16 och 1:1</div>
+      <span class="savebadge" id="saveBadge">Du sparar 7 500 kr mot styckpris</span>
+
+      <svg class="curve" viewBox="0 0 320 118" role="img" aria-label="Styckpriset sjunker i tre steg: 1 975 kr upp till nio annonser, 1 360 kr från tio, 995 kr från tjugofem.">
+        <line x1="10" y1="99" x2="310" y2="99" stroke="#DFE4E2" stroke-width="1"/>
+        <path d="M10,26.6 H75.4 V59.7 H190.8 V87.9 H310" fill="none" stroke="#16232A" stroke-width="2"/>
+        <g font-family="IBM Plex Mono, monospace" font-size="9.5" fill="#8FA0A6">
+          <text x="12" y="20">1 975 kr</text>
+          <text x="79" y="53">1 360 kr</text>
+          <text x="195" y="81">995 kr</text>
+          <text x="7" y="112">1</text>
+          <text x="72" y="112">10</text>
+          <text x="188" y="112">25</text>
+          <text x="298" y="112">40</text>
+        </g>
+        <line id="mLine" x1="79.2" y1="59.7" x2="79.2" y2="99" stroke="#0F6E78" stroke-width="1" stroke-dasharray="3 3"/>
+        <circle id="mDot" cx="79.2" cy="59.7" r="5" fill="#0F6E78" stroke="#fff" stroke-width="2"/>
+      </svg>
+
+      <dl class="reslines">
+        <div><dt id="rAdsLab">10 annonser</dt><dd id="rAds">20 000 kr</dd></div>
+        <div><dt>Extra kommentarsrundor</dt><dd id="rRev">0 kr</dd></div>
+        <div class="tot"><dt>Summa exkl. moms</dt><dd id="rSub">20 000 kr</dd></div>
+      </dl>
+      <p class="vat" id="rVat">Moms 25 % tillkommer med 5 000 kr och är avdragsgill.</p>
+      <p class="eta" id="eta"></p>
+    </div>
+  </div>
+</div></section>
+
+<!-- SÄKRA YTAN -->
+<section id="sakra-ytan"><div class="wrap sec">
+  <div class="sec-head"><h2>Där gränssnittet äter din annons.</h2><span class="tag">kontrollerat 12 sep 2026</span></div>
+  <p class="sec-sub">Reels och Stories lägger en profilrad över toppen av bilden och bildtext, ljudrad och knapp över botten. Allt du placerar där täcks. Det är de här marginalerna varje Gauge-fil byggs mot.</p>
+
+  <div class="margins">
+    <div>
+      <div class="figrow">
+        <svg width="160" height="284" viewBox="0 0 216 384" role="img" aria-label="9:16 med 270 px topp och 384 px botten.">
+          <defs><pattern id="hz2" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#B8320D" stroke-width="2.2" opacity=".5"/></pattern></defs>
+          <rect x="1" y="1" width="214" height="382" fill="#fff" stroke="#16232A" stroke-width="2"/>
+          <rect x="1" y="55" width="214" height="252" fill="#0F6E78" opacity=".08"/>
+          <rect x="1" y="1" width="214" height="54" fill="url(#hz2)"/>
+          <rect x="1" y="307" width="214" height="76" fill="url(#hz2)"/>
+          <line x1="1" y1="55" x2="215" y2="55" stroke="#B8320D" stroke-width="1.4" stroke-dasharray="5 4"/>
+          <line x1="1" y1="307" x2="215" y2="307" stroke="#B8320D" stroke-width="1.4" stroke-dasharray="5 4"/>
+          <text x="108" y="185" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0A4F57">säker yta</text>
+        </svg>
+        <svg width="160" height="160" viewBox="0 0 216 216" role="img" aria-label="1:1 med 108 px marginal runt om.">
+          <defs><pattern id="hz3" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#B8320D" stroke-width="2.2" opacity=".5"/></pattern></defs>
+          <rect x="1" y="1" width="214" height="214" fill="url(#hz3)" stroke="#16232A" stroke-width="2"/>
+          <rect x="22" y="22" width="172" height="172" fill="#fff"/>
+          <rect x="22" y="22" width="172" height="172" fill="#0F6E78" opacity=".08"/>
+          <rect x="22" y="22" width="172" height="172" fill="none" stroke="#B8320D" stroke-width="1.4" stroke-dasharray="5 4"/>
+          <text x="108" y="112" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" fill="#0A4F57">säker yta</text>
+        </svg>
+      </div>
+      <dl class="dl">
+        <div><dt>9:16 duk</dt><dd>1080 × 1920</dd></div>
+        <div><dt>9:16 topp / botten</dt><dd>270 / 384 px</dd></div>
+        <div><dt>9:16 säker yta</dt><dd>1080 × 1266</dd></div>
+        <div><dt>1:1 duk</dt><dd>1080 × 1080</dd></div>
+        <div><dt>1:1 marginal runt om</dt><dd>108 px</dd></div>
+        <div><dt>1:1 säker yta</dt><dd>864 × 864</dd></div>
+      </dl>
+    </div>
+
+    <div class="demo">
+      <div class="demoframe" id="demoframe">
+        <img loading="lazy" src="https://res.cloudinary.com/dxhph3qls/image/upload/v1789392752/716799161_10243514398101296_662279188505452105_n_elpm5h.jpg" alt="Exempel på annons i 9:16 med säkra ytan påslagen.">
+        <div class="ov top"></div><div class="ov bot"></div>
+      </div>
+      <div class="democtl">
+        <button class="btn btn-ghost" type="button" id="szBtn" aria-pressed="false">Visa säkra ytan</button>
+        <span class="note" id="szNote">av</span>
+      </div>
+      <p class="sec-sub" style="margin-top:16px;">Samma kontroll körs automatiskt på varje fil innan leverans. Ligger rubrik eller logotyp utanför ytan går filen inte iväg.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- METOD -->
+<section id="metod"><div class="wrap sec">
+  <h2>Vi animerar med kod, inte för hand.</h2>
+  <div class="made">
+    <div>
+      <p class="sec-sub" style="margin-top:14px;">Ett format är hos oss ett renderingsskript, inte en projektfil som någon öppnar och nudgar bildruta för bildruta. Vi använder Claude för att skriva och variera skripten, och renderingen körs av sig själv. Det är hela förklaringen till både 48 timmarna och priset.</p>
+      <p class="sec-sub" style="margin-top:16px;">Du betalar för ett format som redan är byggt och en produktion som redan är automatiserad. Inte för timmar.</p>
+    </div>
+    <div class="made-list">
+      <div><h3>Mallen är kod</h3><p>Varje format har definierade platser för text, bild, färg och logotyp. Att byta innehåll är en parameter, inte ett omtag.</p></div>
+      <div><h3>Claude skriver varianterna</h3><p>Radbrytningar, textlängder och timing anpassas per annons utan att någon sitter och justerar. Tio versioner kostar inte tio gånger så mycket att göra.</p></div>
+      <div><h3>Marginalerna kontrolleras maskinellt</h3><p>En check läser varje utrenderad fil och flaggar text som hamnar under Metas gränssnitt. Inget bygger på att någon kom ihåg.</p></div>
+      <div><h3>Du behåller kontrollen</h3><p>Du skriver texten och väljer bilderna. Vi bygger, du godkänner.</p></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- SÅ GÅR DET TILL -->
+<section><div class="wrap sec">
+  <h2>Fyra steg, från val till fil.</h2>
+  <p class="sec-sub">Det enda du skriver är texten.</p>
+  <div class="steps">
+    <div class="step"><span class="n">01</span><h3>Klicka på ett format</h3><p>En annons per beställning. Priset står på rutan och det blir ingen offert.</p></div>
+    <div class="step"><span class="n">02</span><h3>Fyll i underlaget</h3><p>Logotyp, färger, bilder och text i ett formulär. Tio minuter. Klockan börjar gå här.</p></div>
+    <div class="step"><span class="n">03</span><h3>Filer inom 48 timmar</h3><p>MP4 och ProRes, 9:16 och 1:1, marginalerna kontrollerade innan leverans.</p></div>
+    <div class="step"><span class="n">04</span><h3>Kommentarer</h3><p>En runda ingår. Varje runda lägger till 48 timmar. Från och med den andra kostar en runda 750 kr.</p></div>
+  </div>
+</div></section>
+
+<!-- INGÅR INTE -->
+<section><div class="wrap sec">
+  <h2>Ingår inte, med flit.</h2>
+  <p class="sec-sub">Var och en av de här sakerna gör en leverans långsammare utan att göra annonsen bättre.</p>
+  <div class="nope">
+    <p>Uppstartsmöten och workshops</p>
+    <p>Moodboards och konceptrundor</p>
+    <p>Strategi eller rådgivning kring er kampanj</p>
+    <p>Timdebitering och scope-diskussioner</p>
+    <p>Obegränsat antal ändringar</p>
+    <p>Logotyp, identitet och varumärkesarbete</p>
+  </div>
+</div></section>
+
+</main>
+
+<footer>
+  <div class="foot">
+    <div>
+      <h2 style="max-width:17ch;">Behöver du något särskilt?</h2>
+      <p class="sec-sub">Vill du ha 25 annonser per månad för en särskild klient? Behöver du branding, webbhjälp eller något helt annat? Boka ett möte.</p>
+      <p style="margin-top:24px;"><a class="btn" href="https://calendly.com/alexandra-alexandrastudio/30min" target="_blank" rel="noopener">Boka möte</a></p>
+      <p class="legal">
+        Gauge drivs av Alexandra Grisanti, enskild firma med säte i Stockholm.<br>
+        Momsreg.nr SE930825284101 · Godkänd för F-skatt · alexandra@alexandrastudio.se<br>
+        Alla priser anges exklusive moms. Betalningsvillkor 30 dagar netto. Faktura skickas samlat en gång i månaden.
+      </p>
+    </div>
+    <dl class="meta">
+      <div><dt>Leveranstid</dt><dd>48 h</dd></div>
+      <div><dt>Format per order</dt><dd>9:16, 1:1</dd></div>
+      <div><dt>Filtyper</dt><dd>MP4, ProRes</dd></div>
+      <div><dt>Kommentarsrunda 1</dt><dd>ingår, +48 h</dd></div>
+      <div><dt>Kommentarsrunda 2+</dt><dd>750 kr, +48 h</dd></div>
+      <div><dt>Priser</dt><dd>exkl. moms</dd></div>
+      <div><dt>Betalningsvillkor</dt><dd>30 dagar netto</dd></div>
+      <div><dt>Faktura</dt><dd>en gång i månaden</dd></div>
+      <div><dt>Marginaler kontrollerade</dt><dd>12 sep 2026</dd></div>
+    </dl>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var CUSTOMER_FORM = 'https://forms.fillout.com/t/aCzFvrLZPCus';
+
+  var UNIT = 1975, P10 = 13600, P25 = 24875, REV = 750;
+  function kr(n){ return n.toLocaleString('sv-SE') + ' kr'; }
+
+  /* ---- format grid: clicking a tile goes to that product's own page ---- */
+  document.querySelectorAll('.fmt').forEach(function(b){
+    b.addEventListener('click', function(){
+      var page = b.dataset.page || '';
+      if(page){ window.location.href = page; }
+    });
+  });
+
+  var cb = document.getElementById('custBtn');
+  cb.setAttribute('href', CUSTOMER_FORM);
+  cb.setAttribute('target', '_blank');
+  cb.setAttribute('rel', 'noopener');
+
+  /* ---- kalkylator ---- */
+  var cAds = document.getElementById('cAds'), cRev = document.getElementById('cRev');
+  function unitFor(n){ if(n >= 25) return P25/25; if(n >= 10) return P10/10; return UNIT; }
+  function xFor(n){ return 10 + (n - 1) / 39 * 300; }
+  function yFor(pr){ return 95 - (pr - 1200) / 1700 * 75; }
+
+  function calc(){
+    var n = Number(cAds.value), r = Number(cRev.value);
+    var unit = unitFor(n);
+    var ads = Math.round(n * unit);
+    var extra = Math.max(0, r - 1) * REV * n;
+    var sub = ads + extra;
+    var save = Math.round(n * UNIT - ads);
+    var hours = 48 + Math.max(0, r - 1) * 48;
+
+    document.getElementById('oAds').textContent = n;
+    document.getElementById('oRev').textContent = r;
+
+    document.getElementById('rUnit').textContent = kr(unit);
+    document.getElementById('rPerFile').textContent =
+      kr(Math.round(unit / 2)) + ' per fil · två filer per annons, 9:16 och 1:1';
+
+    var badge = document.getElementById('saveBadge');
+    badge.textContent = 'Du sparar ' + kr(save) + ' mot styckpris';
+    badge.hidden = save <= 0;
+
+    document.getElementById('mDot').setAttribute('cx', xFor(n).toFixed(1));
+    document.getElementById('mDot').setAttribute('cy', yFor(unit).toFixed(1));
+    document.getElementById('mLine').setAttribute('x1', xFor(n).toFixed(1));
+    document.getElementById('mLine').setAttribute('x2', xFor(n).toFixed(1));
+    document.getElementById('mLine').setAttribute('y1', yFor(unit).toFixed(1));
+
+    document.getElementById('rAdsLab').textContent = n + (n === 1 ? ' annons' : ' annonser') + ' × ' + kr(unit);
+    document.getElementById('rAds').textContent = kr(ads);
+    document.getElementById('rRev').textContent = kr(extra);
+    document.getElementById('rSub').textContent = kr(sub);
+    document.getElementById('rVat').textContent =
+      'Moms 25 % tillkommer med ' + kr(Math.round(sub * 0.25)) + ' och är avdragsgill.';
+
+    document.getElementById('revHint').textContent =
+      r === 0 ? 'Inga kommentarer — filen levereras på 48 timmar.'
+      : r === 1 ? 'Första rundan ingår i priset och lägger till 48 timmar.'
+      : 'Runda två och framåt kostar ' + kr(REV) + ' per annons och runda.';
+
+    var d = new Date(Date.now() + hours * 3600 * 1000);
+    var day = d.toLocaleDateString('sv-SE', {weekday:'long', day:'numeric', month:'long'});
+    document.getElementById('eta').innerHTML =
+      'Skickar du underlaget nu är allt levererat <b>' + day + '</b>, efter ' + hours + ' timmar.';
+  }
+  cAds.addEventListener('input', calc);
+  cRev.addEventListener('input', calc);
+  calc();
+
+  /* ---- säkra ytan ---- */
+  var df = document.getElementById('demoframe'), btn = document.getElementById('szBtn'), note = document.getElementById('szNote');
+  btn.addEventListener('click', function(){
+    var on = df.classList.toggle('show');
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    btn.textContent = on ? 'Dölj säkra ytan' : 'Visa säkra ytan';
+    note.textContent = on ? '270 px topp · 384 px botten' : 'av';
+  });
+})();
+</script>
+
+</body>
+</html>

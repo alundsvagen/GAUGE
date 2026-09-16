@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Din beställning | Gauge. Fyll i underlaget och få din annons på 48 timmar.">
+<title>Din beställning — Gauge</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%230F6E78'/><text x='50' y='70' font-size='70' font-weight='bold' text-anchor='middle' fill='%23fff' font-family='sans-serif'>G</text></svg>" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FFFFFF;--ink:#16232A;--ink-soft:#4E6169;--ink-faint:#8FA0A6;
+  --rule:#DFE4E2;--measure:#0F6E78;--measure-deep:#0A4F57;--max:1200px;
+}
+*{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Archivo',system-ui,sans-serif;font-size:17px;line-height:1.55;overflow-x:hidden;}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 28px;}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-.026em;line-height:1.09;}
+h2{font-size:clamp(24px,3vw,35px);}
+h3{font-size:18px;letter-spacing:-.012em;}
+p{margin:0;}
+a{color:inherit;}
+img{max-width:100%;}
+:focus-visible{outline:2px solid var(--measure);outline-offset:3px;}
+
+.btn{display:inline-flex;align-items:center;gap:10px;font-size:15px;font-weight:600;padding:13px 22px;
+  border:1.5px solid var(--ink);background:var(--ink);color:#fff;border-radius:2px;cursor:pointer;
+  text-decoration:none;font-family:inherit;transition:background .14s,border-color .14s,color .14s;}
+.btn:hover{background:var(--measure-deep);border-color:var(--measure-deep);}
+.btn-ghost{background:transparent;color:var(--ink);}
+.btn-ghost:hover{background:var(--ink);color:#fff;}
+
+/* header */
+header{border-bottom:1px solid var(--rule);position:sticky;top:0;background:#fff;z-index:30;}
+.bar{display:flex;align-items:center;gap:20px;padding:13px 28px;max-width:var(--max);margin:0 auto;}
+.mark{display:flex;flex-direction:column;gap:3px;margin-right:auto;text-decoration:none;}
+.mark .name{font-weight:800;font-size:20px;letter-spacing:.17em;line-height:1;}
+.mark .ticks{height:6px;width:100px;opacity:.5;background:repeating-linear-gradient(to right,var(--ink) 0 1px,transparent 1px 8px);}
+.bar nav{display:flex;gap:20px;}
+.bar nav a{font-size:14.5px;font-weight:500;color:var(--ink-soft);text-decoration:none;}
+.bar nav a:hover{color:var(--measure-deep);text-decoration:underline;text-underline-offset:4px;}
+
+/* page */
+.sec{padding-top:52px;padding-bottom:80px;}
+.sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.04em;color:var(--measure-deep);}
+.sec-sub{margin-top:14px;color:var(--ink-soft);max-width:64ch;}
+
+/* layout */
+.ck{display:grid;grid-template-columns:340px 1fr;gap:40px;margin-top:40px;align-items:start;}
+@media(max-width:900px){.ck{grid-template-columns:1fr;gap:28px;}}
+
+/* sidebar */
+.ck-side{border:1.5px solid var(--ink);padding:20px;}
+.ck-side .thumb{width:100%;aspect-ratio:4/5;object-fit:cover;border:1px solid var(--rule);display:block;
+  transition:opacity .15s;}
+.ck-side .thumb:hover{opacity:.88;}
+.ck-side .cc{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--measure-deep);margin-top:14px;}
+.ck-side h3{margin:3px 0 12px;font-size:20px;}
+.ck-dl{border-top:1px solid var(--rule);}
+.ck-dl div{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid var(--rule);font-size:14px;}
+.ck-dl dt{color:var(--ink-soft);}
+.ck-dl dd{margin:0;font-family:'IBM Plex Mono',monospace;font-weight:500;}
+.ck-note{margin-top:14px;font-size:13.5px;color:var(--ink-soft);line-height:1.55;}
+.back-link{display:inline-block;margin-top:18px;font-family:'IBM Plex Mono',monospace;font-size:13px;
+  color:var(--measure-deep);text-decoration:underline;text-underline-offset:3px;}
+.back-link:hover{color:var(--ink);}
+
+/* no-product fallback */
+.no-product{padding:60px 0;text-align:center;}
+.no-product p{color:var(--ink-soft);margin-top:14px;}
+.no-product .btn{margin-top:28px;}
+
+/* form */
+.ck-form{border:1px solid var(--rule);min-height:640px;position:relative;}
+@media(max-width:900px){.ck-side .thumb{max-width:220px;}}
+
+/* footer */
+footer{border-top:1px solid var(--ink);}
+.foot{max-width:var(--max);margin:0 auto;padding:40px 28px 48px;}
+.foot-brief{font-size:13px;color:var(--ink-faint);line-height:1.7;}
+
+@media(max-width:520px){.wrap{padding:0 18px;}.bar{padding:12px 18px;}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <a class="mark" href="index.html"><span class="name">GAUGE</span><span class="ticks" aria-hidden="true"></span></a>
+    <nav>
+      <a href="index.html#format">Format</a>
+      <a href="om-oss.html">Om oss</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap sec">
+
+  <div id="withProduct" hidden>
+    <div class="sec-head">
+      <h2>Din beställning</h2>
+      <span class="tag" id="ckCode"></span>
+    </div>
+    <p class="sec-sub">Fyll i underlaget nedan. Leveranstiden börjar räknas när formuläret är inskickat, inte när du klickade.</p>
+
+    <div class="ck">
+      <div class="ck-side">
+        <a id="ckImgLink" href="#" target="_blank" rel="noopener" style="display:block;text-decoration:none;">
+          <img class="thumb" id="ckImg" src="" alt="">
+        </a>
+        <span class="cc" id="ckCode2"></span>
+        <h3 id="ckName"></h3>
+        <dl class="ck-dl">
+          <div><dt>Pris</dt><dd>1 975 kr exkl. moms</dd></div>
+          <div><dt>Levereras</dt><dd>9:16 + 1:1</dd></div>
+          <div><dt>Filtyper</dt><dd>MP4, ProRes</dd></div>
+          <div><dt>Leveranstid</dt><dd>48 h</dd></div>
+          <div><dt>Kommentarsrunda 1</dt><dd>ingår</dd></div>
+          <div><dt>Betalning</dt><dd>faktura, 30 dagar netto</dd></div>
+        </dl>
+        <p class="ck-note">Är det din första beställning hos oss bjuder vi på den. Du behöver ingen kod — vi ser det i vårt register och fakturerar 0 kr.</p>
+        <a class="back-link" href="index.html#format">← Byt format</a>
+      </div>
+
+      <div class="ck-form">
+        <div data-fillout-id="gXjKNMti3qus" data-fillout-embed-type="fullscreen" style="width:100%;height:820px;" data-fillout-inherit-parameters></div>
+        <script src="https://server.fillout.com/embed/v1/"></script>
+      </div>
+    </div>
+  </div>
+
+  <div id="noProduct" hidden>
+    <div data-fillout-id="gXjKNMti3qus" data-fillout-embed-type="fullscreen" style="width:100%;height:820px;" data-fillout-inherit-parameters></div>
+    <script src="https://server.fillout.com/embed/v1/"></script>
+  </div>
+
+</div>
+</main>
+
+<footer>
+  <div class="foot">
+    <p class="foot-brief">
+      Gauge drivs av Alexandra Grisanti, enskild firma med säte i Stockholm.<br>
+      Momsreg.nr SE930825284101 · Godkänd för F-skatt · alexandra@alexandrastudio.se<br>
+      Alla priser anges exklusive moms. Betalningsvillkor 30 dagar netto. Faktura skickas samlat en gång i månaden.
+    </p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  function param(name){
+    return new URLSearchParams(window.location.search).get(name) || '';
+  }
+
+  var id   = param('id');
+  var name = param('name');
+  var img  = param('img');
+  var form = param('form');
+  var page = param('page');
+
+  if(!id){
+    document.getElementById('noProduct').removeAttribute('hidden');
+    return;
+  }
+
+  document.getElementById('withProduct').hidden = false;
+
+  document.getElementById('ckCode').textContent  = id;
+  document.getElementById('ckCode2').textContent = id;
+  document.getElementById('ckName').textContent  = name || id;
+
+  if(img){
+    var el = document.getElementById('ckImg');
+    el.src = img;
+    el.alt = name || id;
+  }
+
+  if(page){
+    document.getElementById('ckImgLink').href = page;
+  }
+
+  /* Update page title */
+  document.title = (name || id) + ' — Gauge · Beställning';
+})();
+</script>
+
+</body>
+</html>
